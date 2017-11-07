@@ -11,7 +11,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 
 	body, _ := ioutil.ReadAll(r.Body)
-	fmt.Printf("Hi there: %s!\n", body)
+	ioutil.WriteFile("01.gif", body, 0666)
+	fmt.Printf("Image saved!\n")
 }
 
 func main() {
