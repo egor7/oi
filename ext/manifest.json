@@ -1,0 +1,27 @@
+{
+  "name": "Offline Internet",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Dump data to localhost",
+  "homepage_url": "http://sourceforge.ru",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://home.mcom.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
