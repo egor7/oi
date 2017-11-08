@@ -18,7 +18,7 @@ chrome.extension.sendMessage({}, function(response) {
 
 			var xhr = new XMLHttpRequest();
 			xhr.onreadystatechange = handleStateChange;
-			xhr.open("POST", "http://localhost:8080", true);
+			xhr.open("POST", "https://localhost:443", true);
 			//var arr = [];
 			//for (i = 0; i < document.images.length; i++) {
 			//	//http://home.mcom.com/home/images/tiles.gif

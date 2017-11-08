@@ -17,7 +17,7 @@
   "content_scripts": [
     {
       "matches": [
-        "http://home.mcom.com/*"
+	"http://*/*", "https://*/*"
       ],
       "js": [
         "src/inject/inject.js"
